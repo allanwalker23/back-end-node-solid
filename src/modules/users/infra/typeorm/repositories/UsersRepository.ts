@@ -11,7 +11,7 @@ import User from '../entities/User';
 //Liskov Substituion Principle
 
 class UsersRepository implements IUsersRepository{
-  private ormRepository:Repository<User>
+  private ormRepository:Repository<User>   
 
   constructor(){
     this.ormRepository =  getRepository(User)
